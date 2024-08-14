@@ -1,0 +1,867 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Ubuntu&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Diphylleia&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Strike&family=Righteous&family=Tilt+Warp&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans&family=Righteous&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Marck+Script&family=Sofia+Sans:ital,wght@0,1..1000;1,1..1000&display=swap');
+
+
+
+html {
+    background-color: #f6f6f6;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    color: #010101;
+}
+
+body {
+    color: #FF94F7;
+    font-family: Poppins;
+}
+
+
+@media (max-width:425px) {
+
+    header nav {
+        /* border: 2px solid; */
+        height: 19vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header nav .rightbar {
+        display: none;
+    }
+
+    #logo {
+        transform: translateX(50%, -50%);
+        font-family: "Marck Script", cursive;
+        font-size: 5vw;
+        font-weight: 100;
+        background: -webkit-radial-gradient(#1488cc, #2b32b2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all ease 0.5s;
+        text-shadow: 0.5vw 0.6vw 2vw rgba(103, 64, 64, 0.518);
+    }
+
+    #logo:hover {
+        text-shadow: 1vw 1vw 2.5vw rgba(0, 0, 0, 0.350);
+        transform: rotateX(25deg);
+    }
+
+    #bottomnav {
+        background-image: linear-gradient(to bottom, #ffffff00, #8e5354);
+        backdrop-filter: blur(1px);
+        height: 6vmax;
+        width: 100%;
+        position: fixed;
+        bottom: 0;
+        z-index: 1;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    #bottomnav a {
+        padding: 5px 2vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        transition: ease all 0.5s;
+        font-size: 2.5vw;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    #bottomnav a:hover {
+        border-radius: 10px;
+        padding: 5px 2vw;
+        background-image: linear-gradient(to bottom, #ffffff00, #8e5354c3);
+    }
+
+    header {
+        width: 100%;
+        height: 6vw;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+        background: linear-gradient(to bottom, #6300615e, #ffffff00) !important;
+
+    }
+
+    nav .leftbar ul li .hide {
+        display: none;
+    }
+
+    nav .rightbar ul li .hide {
+        display: none;
+    }
+
+    /* Header end  */
+
+
+
+    /* Main Start  */
+
+
+    main .scroll img {
+        margin: 1vw 0;
+        width: 95%;
+        mix-blend-mode: multiply;
+    }
+
+    main .heading h1 {
+        text-align: center;
+        font-size: 3vw;
+        font-weight: 500;
+    }
+
+    main .brands {
+        /* border: 2px solid; */
+        height: 7vw;
+        width: 100%;
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    main .brands ul,
+    main .brands ul li {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* gap:1.5vw; */
+        list-style: none;
+    }
+
+    main .brands ul li img {
+        place-items: center;
+        margin: 1vw 0;
+        width: 70%;
+        height: 7vw;
+        mix-blend-mode: multiply;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+
+
+    /* Main End  */
+
+
+
+    /* Footer Start  */
+
+    .site-footer {
+        height: auto;
+        width: 100%;
+        padding: 7vmax 5vw;
+    }
+
+    .site-footer .container {
+        width: 100%;
+        height: auto;
+    }
+
+    .site-footer .container .row {
+        gap: 2vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+
+    }
+
+    .site-footer h3 {
+        color: #010101;
+        font-size: 4vw;
+    }
+
+    .site-footer p {
+        color: #630061;
+        font-size: 3vw;
+    }
+
+    .site-footer a {
+        color: #630061;
+        text-decoration: none;
+        font-size: 3vw;
+    }
+
+    .site-footer a:hover {
+        color: #ccc;
+    }
+
+    .site-footer ul {
+        list-style: none;
+    }
+
+    .col-md-4 .aboutus {
+        overflow-x: hidden;
+    }
+
+    .followus ul {
+        padding: 1vw 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .followus ul li svg {
+        width: 6vw;
+        height: 5vw;
+    }
+}
+
+
+@media (min-width:426px) and (max-width:1023px) {
+    #bottomnav {
+        display: none;
+    }
+
+
+    #logo {
+        font-family: "Marck Script", cursive;
+        padding: 0 1.5vw;
+        font-size: 5vw;
+        font-weight: 100;
+        background: -webkit-radial-gradient(#1488cc, #2b32b2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all ease 0.5s;
+        text-shadow: 0.5vw 0.6vw 1.5vw rgba(0, 0, 0, 0.553);
+    }
+
+    #logo:hover {
+        text-shadow: 1vw 1vw 2vw rgba(0, 0, 0, 0.368);
+        transform: rotateX(35deg);
+    }
+
+    nav {
+        font-size: 1.5vw;
+    }
+
+    nav .leftbar {
+        width: 50vw;
+    }
+
+    /* Header End  */
+
+    /* Main Start  */
+
+    main .scroll img {
+        margin: 1vw 0;
+        width: 95%;
+        mix-blend-mode: multiply;
+
+    }
+
+    main .heading h1 {
+        text-align: center;
+        font-size: 5vw;
+    }
+
+    main .brands {
+        /* border: 2px solid; */
+        height: 7vw;
+        width: 100%;
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    main .brands ul,
+    main .brands ul li {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* gap:1.5vw; */
+        list-style: none;
+    }
+
+    main .brands ul li img {
+        place-items: center;
+        margin: 1vw 0;
+        width: 70%;
+        height: 7vw;
+        mix-blend-mode: multiply;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+
+    /* Top Phones Start */
+
+    .top-phones {
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: grid;
+        align-content: space-evenly;
+        justify-items: center;
+    }
+
+    #top-phones-heading {
+        font-size: 3vw;
+        margin: 5vw auto;
+    }
+
+    #top-phones-container {
+        /* border: 2px solid; */
+        position: relative;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-items: center;
+        align-content: space-evenly;
+        grid-template-columns: 1fr 1fr;
+        gap: 3vw;
+    }
+
+    #top-phones-container .container a {
+        box-sizing: border-box;
+        /* border: 2px solid; */
+        box-shadow: #63006156 0px 2px 4px 0px inset;
+        border-radius: .8vw;
+        width: 100%;
+        height: 40vw;
+        display: grid;
+        align-content: space-evenly;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        text-decoration: none;
+    }
+
+    #top-phones-container .container a .image {
+        width: 20vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #top-phones-container .container a .image img {
+        height: 25vw;
+        mix-blend-mode: multiply;
+    }
+
+    #top-phones-container .container a .specification {
+        padding: 1vw;
+    }
+
+    #top-phones-container .container a .specification h1 {
+        font-size: 2.2vw;
+        margin: 1vw 0;
+    }
+
+    #top-phones-container .container a .specification h2 {
+        font-size: 1.7vw;
+        color: purple;
+        margin: 1vw 0;
+    }
+
+    #top-phones-container .container a .specification h3 {
+        font-size: 2vw;
+        margin: 2vw 0;
+        color: purple;
+    }
+
+    #top-phones-container .container a .specification hr {
+        margin: 1vw;
+    }
+
+    #top-phones-container a .specification ul {
+        list-style-type: disc;
+        padding-left: 3vw;
+    }
+
+    #top-phones-container a .specification ul li {
+        font-size: 1.2vw;
+    }
+
+
+
+    /* Top Phones End */
+
+
+    /* Main End  */
+
+
+
+    /* Footer Start  */
+    .site-footer {
+        /* height: 35vh; */
+        width: 100%;
+        padding: 1vw 5vw;
+    }
+
+
+    .site-footer .container {
+        width: 100%;
+    }
+
+    .site-footer .container .row {
+        gap: 2vw;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+
+    }
+
+    .site-footer h3 {
+        color: #010101;
+    }
+
+    .site-footer p {
+        color: #630061;
+    }
+
+    .site-footer a {
+        color: #630061;
+        text-decoration: none;
+    }
+
+    .site-footer a:hover {
+        color: #ccc;
+    }
+
+    .site-footer ul {
+        list-style: none;
+        padding: 0;
+    }
+
+
+    .col-md-4 {
+        /* height: 100px; */
+    }
+
+    .followus ul {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .followus ul li svg {
+        width: 5vw;
+        height: 4vw;
+    }
+}
+
+
+@media (min-width: 1024px) {
+
+
+    #bottomnav {
+        display: none;
+    }
+
+    #logo {
+        font-family: "Marck Script", cursive;
+        font-size: 5vw;
+        font-weight: 100;
+        background: -webkit-radial-gradient(#1488cc, #2b32b2);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        transition: all ease 0.5s;
+        text-shadow: 0.5vw 0.6vw 1.5vw rgba(0, 0, 0, 0.568);
+    }
+
+    #logo:hover {
+        text-shadow: 1vw 1vw 2.5vw rgba(0, 0, 0, 0.741);
+        transform: rotateX(35deg);
+    }
+
+    nav .leftbar {
+        width: 50vw;
+    }
+
+    header {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Header End  */
+
+    /* Main start  */
+
+    main .scroll img {
+        mix-blend-mode: multiply;
+        margin: 1vw 0;
+        width: 95%;
+    }
+
+    main .heading h1 {
+        text-align: center;
+        font-size: 3vw;
+        margin: 2vw 0;
+    }
+
+    main .brands {
+        /* border: 2px solid; */
+        height: 7vw;
+        width: 100%;
+        padding: 2vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    main .brands ul,
+    main .brands ul li {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        /* gap:1.5vw; */
+        list-style: none;
+    }
+
+    main .brands ul li img {
+        place-items: center;
+        margin: 1vw 0;
+        width: 70%;
+        height: 7vw;
+        mix-blend-mode: multiply;
+        aspect-ratio: 3/2;
+        object-fit: contain;
+    }
+
+
+    /* Top Phones Start */
+
+    .top-phones {
+        box-sizing: border-box;
+        position: relative;
+        width: 100%;
+        height: auto;
+        display: grid;
+        align-content: space-evenly;
+        justify-items: center;
+        padding: 2vw;
+    }
+
+    #top-phones-heading {
+        font-size: 3vw;
+        margin-bottom: 4vw;
+    }
+
+    #top-phones-container {
+        /* border: 2px solid; */
+        position: relative;
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        display: grid;
+        justify-items: center;
+        align-content: space-evenly;
+        grid-template-columns: 1fr 1fr;
+        gap: 3vw;
+    }
+
+    #top-phones-container .container a {
+        box-sizing: border-box;
+        /* border: 2px solid; */
+        box-shadow: #63006156 0px 2px 4px 0px inset;
+        border-radius: .8vw;
+        width: 100%;
+        height: 40vw;
+        display: grid;
+        align-content: space-evenly;
+        justify-items: center;
+        grid-template-columns: 1fr 1fr;
+        text-decoration: none;
+    }
+
+    #top-phones-container .container a .image {
+        width: 20vw;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #top-phones-container .container a .image img {
+        height: 25vw;
+        mix-blend-mode: multiply;
+    }
+
+    #top-phones-container .container a .specification {
+        padding: 1vw;
+    }
+
+    #top-phones-container .container a .specification h1 {
+        font-size: 2.2vw;
+        margin: 1vw 0;
+    }
+
+    #top-phones-container .container a .specification h2 {
+        font-size: 1.7vw;
+        color: purple;
+        margin: 1vw 0;
+    }
+
+    #top-phones-container .container a .specification h3 {
+        font-size: 2vw;
+        margin: 2vw 0;
+        color: purple;
+    }
+
+    #top-phones-container .container a .specification hr {
+        margin: 1vw;
+    }
+
+    #top-phones-container a .specification ul {
+        list-style-type: disc;
+        padding-left: 3vw;
+    }
+
+    #top-phones-container a .specification ul li {
+        font-size: 1.2vw;
+    }
+
+
+
+    /* Top Phones End */
+
+
+
+    /* Main End  */
+
+    /* Footer Start  */
+
+    .site-footer {
+        height: 35vh;
+        width: 100%;
+        padding: 1vw 5vw;
+    }
+
+    .site-footer .container {
+        width: 100%;
+    }
+
+    .site-footer .container .row {
+        gap: 20px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+    }
+
+    .site-footer h3 {
+        color: #010101;
+    }
+
+    .site-footer p {
+        color: #630061;
+    }
+
+    .site-footer a {
+        color: #630061;
+        text-decoration: none;
+    }
+
+    .site-footer a:hover {
+        color: #ccc;
+    }
+
+    .site-footer ul {
+        list-style: none;
+        padding: 0;
+    }
+
+    .site-footer ul.social-icons li {
+        display: inline;
+        margin-right: 10px;
+    }
+
+    .site-footer ul.social-icons li a {
+        color: #fff;
+        font-size: 20px;
+    }
+
+    .site-footer ul.social-icons li a:hover {
+        color: #ccc;
+    }
+
+    .col-md-4 {
+        height: 10vw;
+    }
+
+    .followus ul {
+        padding: 10px 0;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .followus ul li svg {
+        width: 2vw;
+        height: 2vw;
+    }
+}
+
+/* Media query End  */
+
+header {
+    padding: 2vw;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, #ffffff00, #63006184);
+    backdrop-filter: blur(5px);
+}
+
+/* Nav Start  */
+
+nav {
+    /* border: 2px solid; */
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .leftbar {
+    /* height: 35px; */
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+nav .leftbar{
+    height: 35px;
+    display:flex;
+    align-items:center;
+}
+nav .leftbar ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+nav .leftbar ul li a {
+    text-decoration: none;
+    color: #69483D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .leftbar .hide {
+    transition: all ease 0.3s;
+    padding: 0 1vw;
+    border-radius: 0.3vw;
+}
+
+nav .leftbar .hide:hover {
+    background: linear-gradient(to bottom, #ffffff00, #6300615b);
+
+    /* color:  #FF94F7 ; */
+    padding: .5 1vw;
+    border-radius: 0.3vw;
+}
+
+.anchor {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 50px;
+}
+
+
+nav .rightbar {
+    width: 20vw;
+    height: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav .rightbar ul {
+    list-style: none;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+nav .rightbar ul li a {
+    text-decoration: none;
+    color: #FF94F7;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Nav End  */
+
+
+/* Main start  */
+
+.scroll {
+
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    overflow-y: auto;
+    column-gap: 1.5vw;
+}
+
+.scroll::-webkit-scrollbar {
+    display: none;
+}
+
+.scroll {
+    scroll-snap-type: mandatory;
+}
+
+.brands ul li .for-more {
+    background-color: #630061 55;
+    padding: .2vw 1vw;
+    margin-bottom: 1vw;
+    border-radius: .5vw;
+    font-size: 1.5vw;
+    text-decoration: none;
+}
+
+/* Main End  */
+
+svg {
+    transition: ease all 0.5s;
+}
+
+svg:hover {
+    transform: translateY(0.3vw) skewY(15deg);
+}
+
+
+/* Footer  */
+
+.site-footer {
+    background-image: linear-gradient(#c69d8e00, #630061);
+    color: #010101;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    box-sizing: border-box;
+}

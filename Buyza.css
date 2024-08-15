@@ -218,7 +218,6 @@ body::-webkit-scrollbar-thumb {
     font-size: 1.5vw;
     text-decoration: none;
     border: 1px outset rgba(81, 59, 51, 0.466);
-    color: var(--sec-col);
     font-weight: bolder;
     border-radius: 8px;
     margin-top: 30px;
@@ -227,12 +226,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   #leftscroll #shopnow:hover {
-    border: 1px outset var(--sec-col);
-    color: var(--sec-col);
-    background-color: var(--main-col);
     transform: scale(1.2) rotateX(360deg);
-    box-shadow: 1px 1px 3px rgba(81, 59, 51, 0.466) inset,
-      -1px -1px 3px var(--sec-col) 79;
   }
 
   #rightscroll img {
@@ -632,10 +626,6 @@ body::-webkit-scrollbar-thumb {
   #leftscroll a {
     font-size: 1.5vw;
     text-decoration: none;
-    border: 2px outset var(--sec-col);
-    color: var(--sec-col);
-    box-shadow: 0px 3px 5px rgba(81, 59, 51, 0.466) inset,
-      3px 3px 5px rgba(81, 59, 51, 0.466);
     font-weight: bolder;
     border-radius: 8px;
     margin-top: 5vw;
@@ -644,12 +634,7 @@ body::-webkit-scrollbar-thumb {
   }
 
   #leftscroll a:hover {
-    border: 2px outset var(--sec-col);
-    color: var(--main-col);
-    background-color: var(--sec-col);
     transform: scale(1.1) rotateX(360deg) translateX(10px);
-    box-shadow: 3px 3px 5px rgba(81, 59, 51, 0.466) inset,
-      -2px -2px 5px var(--sec-col);
   }
 
   #rightscroll img {
@@ -1010,7 +995,6 @@ body::-webkit-scrollbar-thumb {
 
   #leftscroll h4 {
     font-family: Arial, Helvetica, sans-serif;
-    color: var(--sec-col);
   }
 
   #leftscroll h2 {
@@ -1018,15 +1002,11 @@ body::-webkit-scrollbar-thumb {
     font-weight: 300;
     padding: 5px 0px;
     margin-top: 30px;
-    color: var(--sec-col);
   }
 
   #leftscroll a {
     text-decoration: none;
     border: 2px outset rgba(81, 59, 51, 0.466);
-    color: var(--sec-col);
-    box-shadow: 0px 3px 5px rgba(81, 59, 51, 0.466) inset,
-      3px 3px 5px rgba(81, 59, 51, 0.466);
     font-weight: bolder;
     border-radius: 10px;
     margin-top: 50px;
@@ -1035,9 +1015,6 @@ body::-webkit-scrollbar-thumb {
   }
 
   #leftscroll a:hover {
-    border: 2px outset var(--sec-col);
-    color: var(--text-col);
-    background-color: var(--sec-col);
     transform: scale(1.1) rotateX(360deg) translateX(10px);
   }
 
@@ -1346,12 +1323,6 @@ body::-webkit-scrollbar-thumb {
 
 /* Media query End  */
 
-header {
-  padding: 2vw;
-  box-sizing: border-box;
-  background: linear-gradient(to bottom, var(--trans-col), var(--main-col));
-  backdrop-filter: blur(5px);
-}
 
 /* Nav Start  */
 
@@ -1439,8 +1410,104 @@ nav .rightbar ul li a {
 
 /* Nav End  */
 
+header {
+  padding: 2vw;
+  box-sizing: border-box;
+  /* backdrop-filter: blur(5px); */
+  /* background: linear-gradient(to bottom, var(--trans-col), var(--main-col)); */
+}
+
 /* Scroll start */
 
+#leftscroll h4 {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+#leftscroll h2 {
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 300;
+  padding: 5px 0px;
+  margin-top: 30px;
+}
+
+#leftscroll a {
+  text-decoration: none;
+  font-weight: bolder;
+  border-radius: 10px;
+  margin-top: 50px;
+  padding: 5px 20px;
+  transition: ease all 0.5s;
+}
+
+#leftscroll a:hover {
+  transform: scale(1.1) translateX(10px);
+}
+
+/* Scroll 1 */
+
+.scroll{
+  backdrop-filter: blur(5px);
+  padding: 2vw;
+}
+.scroll1{
+background: linear-gradient(to bottom, #4683b400, var(--main-col));
+}
+.scroll1 h4, .scroll1 h2, .scroll1 h1, .scroll1 p {
+  color: var(--sec-col);
+}
+
+
+.scroll1 a:hover {
+  border: 2px outset var(--sec-col);
+  color: var(--text-col);
+  background-color: var(--sec-col);
+}
+
+/* Scroll 2 */
+
+.scroll2{
+  background: linear-gradient(to bottom, #f4393300, #ff7873);
+}
+
+
+.scroll2 h4, .scroll2 h2, .scroll2 h1, .scroll2 p {
+  color: #B12B27;
+}
+
+
+.scroll2 a {
+  color: var(--text-col);
+  background-color: #B12B27;
+}
+
+.scroll2 a:hover {
+  border: 2px solid #B12B27;
+  color: #B12B27;
+  background-color: var(--text-col-2);
+}
+
+/* Scroll 3 */
+
+.scroll3{
+  background: linear-gradient(to bottom, #dac0a900, #DAC0A9);
+}
+
+
+.scroll3 h4, .scroll3 h2, .scroll3 h1, .scroll3 p {
+  color: #393414;
+}
+
+
+.scroll3 a {
+  color: var(--text-col);
+  background-color: #393414;
+}
+
+.scroll3 a:hover {
+  border: 2px solid #393414;
+  color: #393414;
+  background-color: var(--text-col);
+}
 
 #rightscroll img {
   transition: ease all 0.5s;
@@ -1450,37 +1517,11 @@ nav .rightbar ul li a {
   transform: scale(1.1) translateY(-0.5vw) rotate(20deg);
   position: relative;
   z-index: 1;
-  filter: drop-shadow(5vw 1.2vw 30px var(--sec-col));
+  filter: drop-shadow(5vw 1.2vw 30px rgba(112, 128, 144, 0.219) );
 }
 
 /* Scroll End  */
 
-.capsule-for-switch {
-  width: 11vmin;
-  height: 1.2vmin;
-  border-radius: 1vmin;
-  background-color: var(--main-col);
-  margin: auto;
-  margin-top: 2vmin;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.capsule-for-switch .switch {
-  width: 2vmin;
-  height: 0.6vmin;
-  border-radius: 0.7vmin;
-  background-color: var(--sec-col);
-  margin: auto;
-  transition: ease all 0.5s;
-}
-
-.capsule-for-switch .switch:hover {
-  width: 4vmin;
-}
-
-/* Capsule End  */
 
 /* Items Card */
 
@@ -1493,32 +1534,32 @@ nav .rightbar ul li a {
 }
 
 #image1 {
-  background-image: url("bag.jpg");
+  background-image: url("images/bag.jpg");
   background-position: center;
 }
 
 #image2 {
-  background-image: url("tshirts.jpg");
+  background-image: url("images/tshirts.jpg");
   background-position: center;
 }
 
 #image3 {
-  background-image: url("denim.jpg");
+  background-image: url("images/denim.jpg");
   background-position: center;
 }
 
 #image4 {
-  background-image: url("pexels-pixabay-163117.jpg");
+  background-image: url("images/pexels-pixabay-163117.jpg");
   background-position: center;
 }
 
 #image5 {
-  background-image: url("pexels-talha-irshad-5241055.jpg");
+  background-image: url("images/pexels-talha-irshad-5241055.jpg");
   background-position: center;
 }
 
 #image6 {
-  background-image: url("pexels-k-zoltan-346642.jpg");
+  background-image: url("images/pexels-k-zoltan-346642.jpg");
   background-position: center;
 }
 

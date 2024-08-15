@@ -1534,32 +1534,32 @@ background: linear-gradient(to bottom, #4683b400, var(--main-col));
 }
 
 #image1 {
-  background-image: url("images/bag.jpg");
+  background-image: url("bag.jpg");
   background-position: center;
 }
 
 #image2 {
-  background-image: url("images/tshirts.jpg");
+  background-image: url("tshirts.jpg");
   background-position: center;
 }
 
 #image3 {
-  background-image: url("images/denim.jpg");
+  background-image: url("denim.jpg");
   background-position: center;
 }
 
 #image4 {
-  background-image: url("images/pexels-pixabay-163117.jpg");
+  background-image: url("pexels-pixabay-163117.jpg");
   background-position: center;
 }
 
 #image5 {
-  background-image: url("images/pexels-talha-irshad-5241055.jpg");
+  background-image: url("pexels-talha-irshad-5241055.jpg");
   background-position: center;
 }
 
 #image6 {
-  background-image: url("images/pexels-k-zoltan-346642.jpg");
+  background-image: url("pexels-k-zoltan-346642.jpg");
   background-position: center;
 }
 
